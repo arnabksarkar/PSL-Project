@@ -46,3 +46,10 @@ However, in UBCF there are certain use cases when it returns NA or less than 10 
 
 For example, if an user gives 2 movies with 5 ratings, the recommendations often come as NA for all 10 movies. We replaced those NA ones with the most popular movies in the entire dataset.
 
+## Project Team Members
+
+ Name          | NetID    | Email                 |
+:----------------|:---------|:----------------------|
+ Brittany West      | bnwest2  | bnwest2@illinois.edu  |
+ Arnab KarSarkar | arnabk2  | arnabk2@illinois.edu  |
+ Shivani Senguttuvan  | shivani2 | shivani2@illinois.edu |
