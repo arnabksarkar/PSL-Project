@@ -190,11 +190,11 @@ shinyServer(function(input, output, session) {
     recom_result = df_genre()
     lapply(1:num_rows, function(i) {
       list(fluidRow(lapply(1:num_movies, function(j) {
-        movie_idx = i * j
+        movie_idx = (i - 1) * num_movies + j
         movie_id = recom_result$MovieID[movie_idx]
         movie_title = recom_result$Title[movie_idx]
         rec_movie = movies[movies$MovieID == movie_id,]
-        box(width = 2, status = "success", solidHeader = TRUE, title = paste0("Rank ", (i - 1) * num_movies + j),
+        box(width = 2, status = "success", solidHeader = TRUE, title = paste0("Rank ", movie_idx),
             div(style = "text-align:center", 
                 a(img(src = rec_movie$image_url, height = 150))
             ),
