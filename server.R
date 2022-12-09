@@ -210,7 +210,7 @@ shinyServer(function(input, output, session) {
   
   
   output$ratings_movie <- renderUI({
-    num_rows <- 20
+    num_rows <- 50
     num_movies <- 6 # movies per row
     
     lapply(1:num_rows, function(i) {
